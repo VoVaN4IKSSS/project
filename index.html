@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=па, initial-scale=1.0">
-    <title>Document</title>
+    <title>Тест бебезянко</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="app">
+        <div class="header">
+            <div class="title">Тести від бебезянко</div>
+        </div>
+
+        <section id="menu" class="main active">
+            <div class="menu">
+                <div class="card">
+                    <button class="btnmain" data-test="math">
+                        Математичний тест
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btnmain" data-test="IQ">
+                        IQ тест
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btnmain" data-test="eng">
+                        Тест англ мови
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btnmain" data-test="mc">
+                        Тест з майнкрафту
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="teststart" class="main">
+            <div class="center">
+                <h2 id="testtitle">Тест</h2>
+                <button id="starttestbtn" class="btnmain">Старт</button>
+                <button id="backtomenu" class="btnmain">Повернутися назад</button>
+            </div>
+        </section>
+
+        <section id="questionscreen" class="main">
+            <div class="center">
+                <div id="qtitle" class="questiontitle">
+                    <p id="current_test_name">Назва тесту</p>
+                </div>
+                <div class="question_box">
+                    <div id="question_text" class="question">Питання</div>
+                </div> 
+                <div id="answers_wrap" class="answers">Відповіді</div>
+                <div id="start_block" class="start_block">
+                    <div id="statistic" class="statistic"></div>
+                    <button id="homebtn" class="btnmain">Завершити</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
